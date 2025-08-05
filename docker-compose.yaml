@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: resume-backend
+    ports:
+      - "8000:8000"
+    environment:
+      DB_HOST: host.docker.internal  # <== connects to host machine (XAMPP)
+      DB_PORT: 3307                  # <== your custom XAMPP port
+      DB_USER: root                 # <== your XAMPP MySQL user
+      DB_PASSWORD:          # <== your XAMPP MySQL password
+      DB_NAME: resume_db
+    networks:
+      - resume-network
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: resume-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - resume-network
+
+networks:
+  resume-network:

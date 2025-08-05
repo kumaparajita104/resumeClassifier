@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+mysql-connector-python
+scikit-learn
+joblib
+sentence-transformers
+numpy
+pandas

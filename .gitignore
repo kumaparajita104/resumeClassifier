@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+env/
+venv/
+backend/venv/
+backend/hf_cache/
+
+# Node.js
+node_modules/
+frontend/node_modules/
+build/
+frontend/build/
+dist/
+frontend/dist/
+
+# Logs and temporary files
+*.log
+*.pid
+
+# System
+.DS_Store
+Thumbs.db
+
+# VSCode and JetBrains IDEs
+.vscode/
+.idea/
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
