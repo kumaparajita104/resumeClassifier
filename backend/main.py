@@ -7,7 +7,7 @@ import mysql.connector
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer, util
-from typing import List
+
 
 # -------------------------------------
 # FastAPI App
@@ -78,7 +78,7 @@ app.add_middleware(
 def analyze_resume(request: ResumeRequest):
     resume_text = request.resume_text
     top_k = request.top_k
-    threshold = request.threshold
+    
 
     if not resume_text.strip():
         raise HTTPException(status_code=400, detail="Resume text is empty.")

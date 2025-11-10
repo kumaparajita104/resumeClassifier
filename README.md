@@ -7,7 +7,7 @@
 
 ## 🧩 Problem Statement
 
-- Manual resume screening is time-consuming
+- Manual resume screening is time-consuming and tiring
 - Frequent skill-role mismatches during shortlisting
 - Resume formats vary greatly, making automation difficult
 
